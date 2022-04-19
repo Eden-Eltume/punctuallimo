@@ -78,3 +78,12 @@ td {
     border-style: solid;
     border-radius: 2%;
 }
+
+img + p {
+    color: white;
+}
+
+td h2 {
+    color: white;
+    text-align: center;
+}
