@@ -64,7 +64,7 @@ section > footer {
     color: white;
 }
 
-td img {
+h2 + img {
     width: 400px;
     height: 250px;
 }
@@ -86,4 +86,10 @@ img + p {
 td h2 {
     color: white;
     text-align: center;
+}
+
+section > h1 {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
 }
