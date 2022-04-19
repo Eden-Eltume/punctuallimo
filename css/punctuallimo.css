@@ -54,3 +54,12 @@ section > footer {
     bottom: 0;
     margin: 0 0 0 35%;
 }
+
+#reservation-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: white;
+}
