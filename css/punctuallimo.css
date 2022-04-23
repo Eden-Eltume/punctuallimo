@@ -93,3 +93,21 @@ section > h1 {
     text-align: center;
     font-size: xx-large;
 }
+
+br + h2 {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+
+h1 + .fleet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fleet-header + img {
+    width: 600px;
+    height: 350px;
+    border-radius: 5%;
+}
