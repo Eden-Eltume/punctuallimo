@@ -79,7 +79,7 @@ td {
     border-radius: 2%;
 }
 
-img + p {
+iframe + p {
     color: white;
 }
 
@@ -110,4 +110,8 @@ h1 + .fleet-container {
     width: 600px;
     height: 350px;
     border-radius: 5%;
+}
+
+img + iframe {
+    display: none;
 }
