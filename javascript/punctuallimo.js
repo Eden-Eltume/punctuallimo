@@ -91,8 +91,10 @@ const runTest = function (url, targetSelector) {
           return response.json();
       })
         .then(json => {
+            setTimeout(() => {
             document.querySelector(targetSelector).innerHTML = `<div>${json.body}</div>`;
-      })
+            }, "1000")
+        })
         .catch(err => {
           console.log(`There was an error: ${err}`);
       });
