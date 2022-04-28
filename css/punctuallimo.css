@@ -115,3 +115,9 @@ h1 + .fleet-container {
 img + iframe {
     display: none;
 }
+
+div[title="first"], div[title="second"], div[title="third"] {
+    color: white;
+    font-size: xx-large;
+    margin: 50px;
+}

@@ -78,3 +78,30 @@ window.addEventListener('DOMContentLoaded', (event) => {
         document.getElementById("wine-video").style.display = "block";
     }
 })
+
+const runTest = function (url, targetSelector) {
+    const config = {
+      method: "get", 
+      mode: "cors", 
+      cache: "no-cache"
+    };
+
+    fetch(url, config)
+        .then(response => {
+          return response.json();
+      })
+        .then(json => {
+            document.querySelector(targetSelector).innerHTML = `<div>${json.body}</div>`;
+      })
+        .catch(err => {
+          console.log(`There was an error: ${err}`);
+      });
+  }
+
+  window.addEventListener("DOMContentLoaded", event => {
+    window.addEventListener("load", event => {
+      runTest("https://dummyjson.com/comments/12", "[title='first']");
+      runTest("https://dummyjson.com/comments/13", "[title='second']");
+      runTest("https://dummyjson.com/comments/19", "[title='third']");
+    });
+  });
