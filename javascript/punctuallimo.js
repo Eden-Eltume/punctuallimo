@@ -105,3 +105,27 @@ const runTest = function (url, targetSelector) {
       runTest("https://dummyjson.com/comments/19", "[title='third']");
     });
   });
+
+  window.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById("fleet1-limo").addEventListener('mouseover', changePicture);
+
+    function changePicture(){
+        document.getElementById("fleet1-limo").src = "images/inside-fleet1.jpeg"
+    }
+})
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById("fleet2-suv").addEventListener('mouseover', changePicture);
+
+    function changePicture(){
+        document.getElementById("fleet2-suv").src = "images/inside-fleet2.jpeg"
+    }
+})
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById("fleet3-bus").addEventListener('mouseover', changePicture);
+
+    function changePicture(){
+        document.getElementById("fleet3-bus").src = "images/inside-fleet3.jpeg"
+    }
+})
