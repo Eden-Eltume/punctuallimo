@@ -1,81 +1,153 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    document.getElementById("bachelor-picture").addEventListener('click', displayVideo);
+    let bachelorPicture = document.getElementById("bachelor-picture");
+    let bachelorBox = document.getElementById("bachelor-box");
+
+    bachelorPicture.addEventListener('click', displayVideo);
+    bachelorBox.addEventListener('mouseleave', changeBackgroundColor);
 
     function displayVideo(){
-        document.getElementById("bachelor-picture").style.display = "none";
+        bachelorPicture.style.display = "none";
         document.getElementById("bachelor-video").style.display = "block";
+    }
+
+    function changeBackgroundColor(){
+        bachelorBox.style.backgroundColor = "#681750";
     }
 });
 
 window.addEventListener('DOMContentLoaded', (event) => {
-    document.getElementById("birthday-picture").addEventListener('click', displayVideo);
+    let birthdayPicture = document.getElementById("birthday-picture");
+    let birthdayBox = document.getElementById("birthday-box");
+    
+    birthdayPicture.addEventListener('click', displayVideo);
+    birthdayBox.addEventListener('mouseleave', changeBackgroundColor);
 
     function displayVideo(){
-        document.getElementById("birthday-picture").style.display = "none";
+        birthdayPicture.style.display = "none";
         document.getElementById("birthday-video").style.display = "block";
     }
+
+    function changeBackgroundColor(){
+        birthdayBox.style.backgroundColor = "#681750";
+    }
 })
 
 window.addEventListener('DOMContentLoaded', (event) => {
-    document.getElementById("corporate-picture").addEventListener('click', displayVideo);
+    let corporatePicture = document.getElementById("corporate-picture");
+    let corporateBox = document.getElementById("corporate-box");
+
+    corporatePicture.addEventListener('click', displayVideo);
+    corporateBox.addEventListener('mouseleave', changeBackgroundColor);
 
     function displayVideo(){
-        document.getElementById("corporate-picture").style.display = "none";
+        corporatePicture.style.display = "none";
         document.getElementById("corporate-video").style.display = "block";
     }
+
+    function changeBackgroundColor(){
+        corporateBox.style.backgroundColor = "#681750";
+    }
 })
 
 window.addEventListener('DOMContentLoaded', (event) => {
-    document.getElementById("night-picture").addEventListener('click', displayVideo);
+    let nightPicture = document.getElementById("night-picture");
+    let nightBox = document.getElementById("night-box");
+    
+    nightPicture.addEventListener('click', displayVideo);
+    nightBox.addEventListener('mouseleave', changeBackgroundColor);
 
     function displayVideo(){
-        document.getElementById("night-picture").style.display = "none";
+        nightPicture.style.display = "none";
         document.getElementById("night-video").style.display = "block";
     }
+
+    function changeBackgroundColor(){
+        nightBox.style.backgroundColor = "#681750";
+    }
 })
 
 window.addEventListener('DOMContentLoaded', (event) => {
-    document.getElementById("prom-picture").addEventListener('click', displayVideo);
+    let promPicture = document.getElementById("prom-picture");
+    let promBox = document.getElementById("prom-box");
+    
+    promPicture.addEventListener('click', displayVideo);
+    promBox.addEventListener('mouseleave', changeBackgroundColor);
 
     function displayVideo(){
-        document.getElementById("prom-picture").style.display = "none";
+        promPicture.style.display = "none";
         document.getElementById("prom-video").style.display = "block";
     }
+
+    function changeBackgroundColor(){
+        promBox.style.backgroundColor = "#681750";
+    }
 })
 
 window.addEventListener('DOMContentLoaded', (event) => {
-    document.getElementById("shopping-picture").addEventListener('click', displayVideo);
+    let shoppingPicture = document.getElementById("shopping-picture");
+    let shoppingBox = document.getElementById("shopping-box");
+    
+    shoppingPicture.addEventListener('click', displayVideo);
+    shoppingBox.addEventListener('mouseleave', changeBackgroundColor);
 
     function displayVideo(){
-        document.getElementById("shopping-picture").style.display = "none";
+        shoppingPicture.style.display = "none";
         document.getElementById("shopping-video").style.display = "block";
     }
+
+    function changeBackgroundColor(){
+        shoppingBox.style.backgroundColor = "#681750";
+    }
 })
 
 window.addEventListener('DOMContentLoaded', (event) => {
-    document.getElementById("sport-picture").addEventListener('click', displayVideo);
+    let sportPicture = document.getElementById("sport-picture");
+    let sportBox = document.getElementById("sport-box");
+    
+    sportPicture.addEventListener('click', displayVideo);
+    sportBox.addEventListener('mouseleave', changeBackgroundColor);
 
     function displayVideo(){
-        document.getElementById("sport-picture").style.display = "none";
+        sportPicture.style.display = "none";
         document.getElementById("sport-video").style.display = "block";
     }
-})
 
-window.addEventListener('DOMContentLoaded', (event) => {
-    document.getElementById("wedding-picture").addEventListener('click', displayVideo);
-
-    function displayVideo(){
-        document.getElementById("wedding-picture").style.display = "none";
-        document.getElementById("wedding-video").style.display = "block";
+    function changeBackgroundColor(){
+        sportBox.style.backgroundColor = "#681750";
     }
 })
 
 window.addEventListener('DOMContentLoaded', (event) => {
-    document.getElementById("wine-picture").addEventListener('click', displayVideo);
+    let weddingPicture = document.getElementById("wedding-picture");
+    let weddingBox = document.getElementById("wedding-box");
+    
+    weddingPicture.addEventListener('click', displayVideo);
+    weddingBox.addEventListener('mouseleave', changeBackgroundColor);
 
     function displayVideo(){
-        document.getElementById("wine-picture").style.display = "none";
+        weddingPicture.style.display = "none";
+        document.getElementById("wedding-video").style.display = "block";
+    }
+
+    function changeBackgroundColor(){
+        weddingBox.style.backgroundColor = "#681750";
+    }
+})
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    let winePicture = document.getElementById("wine-picture");
+    let wineBox = document.getElementById("wine-box");
+    
+    winePicture.addEventListener('click', displayVideo);
+    wineBox.addEventListener('mouseleave', changeBackgroundColor);
+
+    function displayVideo(){
+        winePicture.style.display = "none";
         document.getElementById("wine-video").style.display = "block";
+    }
+
+    function changeBackgroundColor(){
+        wineBox.style.backgroundColor = "#681750";
     }
 })
 
