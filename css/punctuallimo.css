@@ -55,7 +55,7 @@ section > footer {
     margin: 0 0 0 35%;
 }
 
-#reservation-form {
+.reservation-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,5 +119,46 @@ img + iframe {
 div[title="first"], div[title="second"], div[title="third"] {
     color: white;
     font-size: xx-large;
-    margin: 50px;
+    margin: 30px;
+}
+
+#profile1 > h2 {
+    color: #681750;
+    margin-left: 50px;
+}
+
+#profile2 > h2 {
+    color: #681750;
+    margin-left: 50px;
+}
+
+#profile3 > h2 {
+    color: #681750;
+    margin-left: 50px;
+}
+
+label + input {
+    border-radius: 5%;
+}
+
+label + textarea {
+    border-radius: 5%;
+}
+
+br + label {
+    text-decoration: underline #681750;
+}
+
+.reservation-form > label {
+    text-decoration: underline #681750;
+}
+
+a + a {
+    border-style: solid;
+    border-radius: 10%;
+}
+
+img + a {
+    border-style: solid;
+    border-radius: 10%;
 }

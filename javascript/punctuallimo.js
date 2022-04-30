@@ -203,3 +203,26 @@ window.addEventListener('DOMContentLoaded', (event) => {
         document.getElementById("fleet3-bus").src = "images/inside-fleet3.jpeg"
     }
 })
+
+class Reservation {
+    constructor(fullName, phoneNumber, email, pickupTime, pickupLocation, dropoffTime, dropoffLocation, notes){
+        this.fullName = fullName;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.pickupTime = pickupTime;
+        this.pickupLocation = pickupLocation;
+        this.dropoffTime = dropoffTime;
+        this.dropoffLocation = dropoffLocation;
+        this.notes = notes;
+    }
+
+    pickup() {
+        return `Pick us up at ${this.pickupTime} at ${this.pickupLocation}.`;
+    }
+
+    dropoff() {
+        return `Drop us off at ${this.dropoffTime} at ${this.dropoffLocation}.`;
+    }
+}
+
+let reservation1 = new Reservation('User Name', 123456789, 'user@example.com', '7pm', 'home', '10pm', 'hotel', 'thank you');
