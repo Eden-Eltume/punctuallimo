@@ -162,3 +162,28 @@ img + a {
     border-style: solid;
     border-radius: 10%;
 }
+
+  a:link {
+    color: white;
+  }
+  
+  a:visited {
+    color: white;
+  }
+  
+  a:hover {
+    color: #681750;
+  }
+  
+  a:active {
+    color: black;
+  }
+
+  input:focus {
+    color: #681750;
+  }
+
+  textarea:focus {
+    color: #681750;
+  }
+  
